@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GSAP USE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   
+    <div id="loadingpage" class="h-screen w-screen absolute left-0 top-0 flex z-[99]">
+        <div id="graphs" class="h-[100%] w-[20%] bg-orange-600">
+            <div id="text" class="h-[100%] w-[100%] p-[2rem] flex flex-col absolute  top-[50%] ">
+                <div id="line" class="h-[0.2rem] w-[60%] bg-white  "></div>
+                <h1 id="texts" class="text-[7vw] text-white font-bold relative">Ramos <sup class="absolute top-10 text-2xl">®</sup></h1>
+            </div>
+        </div>
+        <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
+        <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
+        <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
+        <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
+        <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
+    </div>
+    <div id="cursor" class="h-[1rem] w-[1rem] rounded-[50%] absolute bg-black opacity-0"></div>
+    <div id="main" class="h-screen w-screen bg-white p-[2rem] relative ">
+        <div id="navbar"class="h-[60px] w-[100%] bg-black rounded-[15px] grid grid-cols-[1fr,3fr,1fr]" >
+            <div id="left" class="flex justify-center items-center">
+                <h1 class="text-white  text-2xl">ramos.</h1>
+            </div>
+            <div id="mid" class="list-none flex justify-center items-center relative gap-[3rem]">
+                <div id="background" class="h-[60%] absolute left-0  w-[10%] rounded-[15px] bg-gray-400 opacity-0 z-2]"></div>
+                <li class="text-[15px] text-white cursor-pointer p-[.5rem] relative z-3">Key Features</li>
+                <li class="text-[15px] text-white cursor-pointer p-[.5rem] relative z-3">Explore</li>
+                <li class="text-[15px] text-white cursor-pointer p-[.5rem] relative z-3">Solutions</li>
+                <li class="text-[15px] text-white cursor-pointer p-[.5rem] relative z-3">Tools</li>
+                <li class="text-[15px] text-white cursor-pointer p-[.5rem] relative z-3">Contact</li>
+            </div>
+            <div id="right" class=" px-[.5rem] flex justify-end items-center">
+                <button type="#" class="bg-white h-[90%] w-[50%] rounded-[20px]">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
+ <!-- https://react-gsap-ramos-colne.vercel.app/  -->
