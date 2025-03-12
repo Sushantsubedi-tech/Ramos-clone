@@ -9,3 +9,12 @@ html,body{
    height: 100%;
    width: 100%;
 }
+
+#leftpage2{
+   transform: translateX(-90%)  rotate(-14deg) ;
+   transform-origin: bottom right;
+}
+#rightpage2{
+   transform: translateX(100%)  rotate(15deg) ;
+   transform-origin: bottom left;
+}

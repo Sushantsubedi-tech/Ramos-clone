@@ -43,9 +43,10 @@ function cursoranimation(){
 let body = document.querySelector("body")
     body.addEventListener("mousemove",function(dets){
         gsap.to(cursor,{
-            x:dets.x+"px",
-            y:dets.y + "px",
-            opacity:1
+            left:dets.clientX +"px",
+            top:dets.clientY +"px",
+            opacity:1,
+             ease: "power2.out"
         })
     })
     body.addEventListener("mouseleave",function(){
@@ -80,3 +81,52 @@ container.addEventListener("mouseleave",function(){
 })
 }
 navbarhoveranimation();
+function page1textanimation(){
+let firsttext = document.querySelector("#first")
+let secondtext = document.querySelector("#second")
+gsap.to(firsttext,{
+x:"-15%",
+scrollTrigger:{
+    trigger:firsttext,
+    scroller:"body",
+    scrub:true,
+}
+}) 
+
+gsap.to(secondtext,{
+x:"10%",
+scrollTrigger:{
+    trigger:secondtext,
+    scroller:"body",
+    scrub:true,
+}
+})
+}
+page1textanimation();
+function page2containeranimation(){
+    let leftcontainer = document.querySelector("#leftpage2")
+    let rightcontainer = document.querySelector("#rightpage2")
+    gsap.to(leftcontainer,{
+        transform:"translateX(0) rotate(0deg)",
+        scrollTrigger:{
+            trigger:leftcontainer,
+            scroller:"body",
+            scrub:true,
+
+            start:"top 50%",
+            end:"bottom 100%"
+        }
+    })
+    gsap.to(rightcontainer,{
+        transform:"translateX(0) rotate(0deg)",
+        scrollTrigger:{
+            trigger:rightcontainer,
+            scroller:"body",
+            scrub:true,
+
+            start:"top 50%",
+            end:"bottom 100%"
+        }
+    })
+}
+page2containeranimation()

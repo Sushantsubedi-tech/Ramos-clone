@@ -9,7 +9,7 @@
 </head>
 <body>
    
-    <div id="loadingpage" class="h-screen w-screen absolute left-0 top-0 flex z-[99]">
+    <!-- <div id="loadingpage" class="h-screen w-screen absolute left-0 top-0 flex z-[99]">
         <div id="graphs" class="h-[100%] w-[20%] bg-orange-600">
             <div id="text" class="h-[100%] w-[100%] p-[2rem] flex flex-col absolute  top-[50%] ">
                 <div id="line" class="h-[0.2rem] w-[60%] bg-white  "></div>
@@ -21,9 +21,10 @@
         <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
         <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
         <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
-    </div>
-    <div id="cursor" class="h-[1rem] w-[1rem] rounded-[50%] absolute bg-black opacity-0"></div>
-    <div id="main" class="h-screen w-screen bg-white p-[2rem] relative ">
+    </div> -->
+    <div id="main" class="h-screen w-screen bg-white relative ">
+        <div id="cursor" class="h-[1rem] w-[1rem] rounded-[50%] absolute bg-orange-600 z-[99]"></div>
+       <div id="page1" class="h-[100%] w-[100%] relative overflow-hidden p-[2rem]">
         <div id="navbar"class="h-[60px] w-[100%] bg-black rounded-[15px] grid grid-cols-[1fr,3fr,1fr]" >
             <div id="left" class="flex justify-center items-center">
                 <h1 class="text-white  text-2xl">ramos.</h1>
@@ -40,6 +41,39 @@
                 <button type="#" class="bg-white h-[90%] w-[50%] rounded-[20px]">Sign Up</button>
             </div>
         </div>
+        <div id="video" class="h-[12rem] w-[100%]  flex px-[2rem] justify-end items-center">
+            <video src="https://dl.dropboxusercontent.com/s/87iozgh1s9pw46j3cn49i/ramos-promo-half.mp4?rlkey=6irgep027719wp14r57the1nx&st=ju51r4id&dl=0" class="h-[100%] w-[20rem] rounded-[15px]" autoplay loop muted></video>
+        </div>
+        <div id="content-container" class=" h-[80%] w-[100%] absolute top-[30%] left-[2.5%] flex flex-col  gap-[1rem]">
+            <h1 class="flex justify-center items-center gap-[1rem] h-[7rem] w-[80%] text-9xl "><span class=" h-[7rem] w-[7rem] bg-orange-500  rounded-[50%]"></span> <span class=" h-[7rem] w-[7rem] bg-green-500 rounded-[50%]"></span> Analytics</h1>
+            <h1 id="first" class="flex justify-center items-center gap-[1rem] h-[7rem] w-[80%] text-9xl mx-[10rem]">that <span class="text-gray-200"> helps</span> you</h1>
+            <h1 id="second" class="flex justify-center items-center gap-[1rem] h-[7rem] w-[80%] text-9xl mx-[8rem] " >shape the <span class=" h-[7rem] w-[7rem] bg-green-500 rounded-[50%]"></span> future</h1>
+        </div>
+       </div>
+       <div id="page2" class="h-[100vh] w-[100%] bg-[#F9F9F9] my-[10rem] grid grid-rows-[1fr,3fr,1fr] px-[2rem] overflow-hidden">
+        <div id="toplayer" class=" flex  justify-between items-center " >
+            <h1 class="text-3xl">Your key to strategic <br>
+                 success through analytics</h1>
+                <p class="text-[20px]">Ready for exciting, instantaneous, <br>
+                    all-accessible insights in real time?</p>
+        </div>
+        <div id="midlayer" class=" grid grid-cols-[1fr,1fr] gap-[2rem] ">
+            <div id="leftpage2" class=" h-[20rem]  w-[36rem] bg-orange-500 rounded-[10px]">
+                <img src="/left.png" class=" rounded-[10px]" >
+            </div>
+            <div id="rightpage2" class=" h-[20rem] w-[36rem] bg-green-400 rounded-[10px]">
+                <img src="/right.png" class="h-[100%] w-[100%]  rounded-[10px] " >
+            </div>
+        </div>
+        <div id="lastlayer" class="w-[100%] flex justify-center items-center gap-[2rem] ">
+            <h6 class="text-[18px] ">Up To </h6> 
+            <h1 class="text-9xl text-center">45%</h1> 
+            <p class="text-[18px] text-left">Increase your analytics efficiency by up to 45%. Unique <br>
+                 algorithms provide insights from data, reduce time for analysis and <br> save time for
+                making important, informed decisions</p>
+        </div>
+    </div>
+    <div id="page3" class="h-[100vh] w-[100%] bg-black"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
