@@ -30,10 +30,10 @@ function landinganimation(){
     tl.to(graphs,{
         y:"-200%",
         stagger:-0.09,
-        duration:2
+        duration:2,
     })
     tl.to("#loadingpage",{
-        y:"-300%"
+        y:"-300%",
     })
    
 }
