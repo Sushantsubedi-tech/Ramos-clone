@@ -11,8 +11,15 @@ requestAnimationFrame(raf);
 }
 smoothscrolling();
 function landinganimation(){
+  
     let line = document.querySelector("#line")
-    let tl = gsap.timeline()
+    let tl = gsap.timeline(
+        {
+            onComplete:function(){
+                document.body.style.overflow = "auto"
+            }
+        }
+    )
     gsap.to(line,{
         width:0,
         duration:1
