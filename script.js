@@ -119,7 +119,6 @@ function page2containeranimation(){
             trigger:leftcontainer,
             scroller:"body",
             scrub:true,
-
             start:"top 50%",
             end:"bottom 100%"
         }
@@ -137,3 +136,38 @@ function page2containeranimation(){
     })
 }
 page2containeranimation()
+
+function textanimationinpage3(){
+    let firsth1 = document.querySelectorAll("#firsth1page3 span ")
+    let secondh1 = document.querySelectorAll("#secondh1page3 span")
+
+    let tl = gsap.timeline()
+    gsap.from(firsth1, {
+        y: "100%",
+        opacity: 0,
+        stagger: 0.05,  
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#firsth1page3",
+            scroller: "body",
+            scrub:  1,
+            start: "top 80%",
+            end: "bottom 250%",
+        }
+    });
+
+    gsap.from(secondh1, {
+        y: "100%",
+        opacity: 0,
+        stagger: 0.05, 
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#secondh1page3",
+            scroller: "body",
+            scrub: 1,
+            start: "top 80%",
+            end: "bottom 250%",
+        }
+    });
+}
+textanimationinpage3();

@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="relative">
-     <div id="loadingpage" class="h-[100%] w-[100%] fixed left-0 top-0 flex z-[99]">
+     <!-- <div id="loadingpage" class="h-[100%] w-[100%] fixed left-0 top-0 flex z-[99]">
         <div id="graphs" class="h-[100%] w-[20%] bg-orange-600">
             <div id="text" class="h-[100%] w-[100%] p-[2rem] flex flex-col absolute  top-[50%] ">
                 <div id="line" class="h-[0.2rem] w-[60%] bg-white  "></div>
@@ -20,7 +20,7 @@
         <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
         <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
         <div id="graphs" class="h-[100%] w-[16%] bg-orange-600"></div>
-    </div>
+    </div> -->
     <div id="main" class="h-screen w-screen bg-white absolute top-0 left-0  z-[10]">
         <div id="cursor" class="h-[1rem] w-[1rem] rounded-[50%] absolute bg-orange-600 z-[99]"></div>
        <div id="page1" class="h-[100%] w-[100%] relative overflow-hidden p-[2rem]">
@@ -72,7 +72,35 @@
                 making important, informed decisions</p>
         </div>
     </div>
-    <div id="page3" class="h-[100vh] w-[100%] bg-black"></div>
+    <div id="page3" class="h-[100vh] w-[100%]  p-[2rem] grid grid-rows-[1fr,2fr,1fr]">
+        <div id="textcontainer" class=" overflow-hidden">
+            <h1 id="firsth1page3" class="text-7xl  font-['helvetica']  font-bold "><span>M</span><span>a</span><span>x</span><span>i</span><span>m</span><span>i</span><span>z</span><span>e</span>
+                <span> </span>
+                <span>e</span><span>f</span><span>f</span><span>i</span><span>c</span><span>i</span><span>e</span><span>n</span><span>c</span><span>y</span> </h1>
+            <h1 id="secondh1page3" class="text-7xl  font-['helvetica'] font-bold "><span >W</span><span >i</span><span >t</span><span >h</span>
+                <span > </span>
+                <span >o</span><span >u</span><span >r</span>
+                <span > </span>
+                <span >i</span><span >n</span><span >t</span><span >u</span><span >i</span><span >t</span><span >i</span><span >v</span><span >e</span> </h1>
+        </div>
+        <div id="shapeconatiner" class="flex justify-between items-center">
+            <div id="leftshapess">
+                <span class="inline-block h-[7rem] w-[7rem] bg-green-400  relative z-[2] rounded-[50%]"></span>
+                <span class="inline-block h-[7rem] w-[7rem] bg-orange-500  rounded-[50%] transform translate-x-[-20%] relative z-[1]"></span>
+            </div>
+            <div id="rightshapess" >
+                <div class="h-[9rem] w-[23rem] rounded-[60px] bg-yellow-500 overflow-hidden flex items-center justify-center"> <h1 id="movingh1" class="text-7xl whitespace-nowrap font-['helvetica']  text-black " > Analytics Services</h1></div>
+            </div>
+        </div>
+        <div id="lastcontainer" class="flex justify-between items-center">
+            <p class="font-['helvetica'] text-[20px]">Explore traffic sources, page behavior, conversions and more to gain deep insight <br>
+                into your audience. With us, your business doesn't just adapt - it evolves</p>
+                <div id="buttoncontainer" class="flex gap-[2rem]">
+                    <button class="h-[3rem] font-['helvetica'] w-[10rem] bg-gray-200 rounded-[10px]" >Request a demo</button>
+                    <button class="h-[3rem] font-['helvetica'] w-[10rem] bg-orange-500 text-white rounded-[10px]" >Start for free</button>
+                </div>
+        </div>
+    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -80,4 +108,4 @@
     <script src="script.js"></script>
 </body>
 </html>
- <!-- https://react-gsap-ramos-colne.vercel.app/  -->
+ <!-- https://react-gsap-ramos-colne.vercel.app/  --> 
